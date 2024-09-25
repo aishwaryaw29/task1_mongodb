@@ -1,0 +1,9 @@
+/**
+ * specifications: The fields to
+ *   include or exclude.
+ */
+{
+  order_id: 1,
+      quantity: 1,
+      quantity_squared: { $pow: ["$quantity", 2] }
+}

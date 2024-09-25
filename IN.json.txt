@@ -1,0 +1,13 @@
+[
+  {
+    $match:
+      /**
+       * query: The query in MQL.
+       */
+      {
+        sub_category: {
+          $in: ["Chairs", "Tables", "Art"]
+        }
+      }
+  }
+]

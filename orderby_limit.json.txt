@@ -1,0 +1,27 @@
+[
+  {
+    $match:
+      /**
+       * query: The query in MQL.
+       */
+      {
+        ship_mode: "Second Class"
+      }
+  },
+  {
+    $sort:
+      /**
+       * Provide any number of field/order pairs.
+       */
+      {
+        quantity: -1
+      }
+  }
+  {
+    $limit:
+      /**
+       * Provide the number of documents to limit.
+       */
+      5
+  }
+]

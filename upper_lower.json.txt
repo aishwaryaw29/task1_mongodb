@@ -1,0 +1,8 @@
+/**
+ * specifications: The fields to
+ *   include or exclude.
+ */
+{
+  city_upper: { $toUpper: "$city" },
+  state_lower: { $toLower: "$state" }
+}
